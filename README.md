@@ -1,18 +1,70 @@
-# Raid Map
+# Getting Started with Create React App
 
-I'd like for there to exist a system for delegating space in a collaborative SVG (or HTML document).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-One of the main use cases I've been imagining is the [raid map](https://miro.com/app/board/o9J_knhEt7w=/?moveToViewport=-8516,-5516,21788,13742) where guilds, players, and projects all have representations on the map, and responsibility for customizing each's representation falls to the individual.
+## Available Scripts
 
-The workflow I imagine is a default layout is created with initial, perhaps generic, art in place for each of the participants. People are then able to claim spaces and have that approved by someone controlling a ancestor node of the requested node.
+In the project directory, you can run:
 
-I want to define borders to spaces using clipping paths, so contributors are limited in the areas they can affect.
+### `yarn start`
 
-I want to store the document information in Ceramic. The requires some work b/c Ceramic's main document type is a Javascript-based structure. New software would need to be written to serialize the SVG documents to an IPFS IPLD structure and back. I've [begun working on it](https://github.com/dysbulic/xml-to-ipld).
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The interface I'm envisioning is a file folderesque DOM tree on one side, and the rendered SVG on the other. When they hover (or long press) a node in the DOM, a bounding box is placed around it on the rendered image. Clicking or tapping brings up a UI for editing who is allowed to control that node and how is their image composed into the larger tableau.
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
-Permissions are determined by walking the tree to the root and adding all the rules of each node along the way. This means controllers 
-further up the tree are able to override permissions for all their descendants.
+### `yarn test`
 
-Eventually, I would like there to be the capacity for multiple parties to control competing versions of a given node, and for users to be able to browse between them. An AI could compose an ideal set of alternatives for a customized UI where the underlying semantic meanings stays the same.
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+### `yarn build`
+
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `yarn eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `yarn build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
