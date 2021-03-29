@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/raid-map/static/css/main.6dea0f05.chunk.css",
-    "main.js": "/raid-map/static/js/main.e999a37c.chunk.js",
-    "main.js.map": "/raid-map/static/js/main.e999a37c.chunk.js.map",
+    "main.js": "/raid-map/static/js/main.77559206.chunk.js",
+    "main.js.map": "/raid-map/static/js/main.77559206.chunk.js.map",
     "runtime-main.js": "/raid-map/static/js/runtime-main.a1423a49.js",
     "runtime-main.js.map": "/raid-map/static/js/runtime-main.a1423a49.js.map",
-    "static/js/2.9f811a98.chunk.js": "/raid-map/static/js/2.9f811a98.chunk.js",
-    "static/js/2.9f811a98.chunk.js.map": "/raid-map/static/js/2.9f811a98.chunk.js.map",
+    "static/js/2.16ba2a1b.chunk.js": "/raid-map/static/js/2.16ba2a1b.chunk.js",
+    "static/js/2.16ba2a1b.chunk.js.map": "/raid-map/static/js/2.16ba2a1b.chunk.js.map",
     "static/js/3.6b8c5134.chunk.js": "/raid-map/static/js/3.6b8c5134.chunk.js",
     "static/js/3.6b8c5134.chunk.js.map": "/raid-map/static/js/3.6b8c5134.chunk.js.map",
     "index.html": "/raid-map/index.html",
     "static/css/main.6dea0f05.chunk.css.map": "/raid-map/static/css/main.6dea0f05.chunk.css.map",
-    "static/js/2.9f811a98.chunk.js.LICENSE.txt": "/raid-map/static/js/2.9f811a98.chunk.js.LICENSE.txt",
+    "static/js/2.16ba2a1b.chunk.js.LICENSE.txt": "/raid-map/static/js/2.16ba2a1b.chunk.js.LICENSE.txt",
     "static/media/starfield.c4eee424.svg": "/raid-map/static/media/starfield.c4eee424.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.a1423a49.js",
-    "static/js/2.9f811a98.chunk.js",
+    "static/js/2.16ba2a1b.chunk.js",
     "static/css/main.6dea0f05.chunk.css",
-    "static/js/main.e999a37c.chunk.js"
+    "static/js/main.77559206.chunk.js"
   ]
 }
