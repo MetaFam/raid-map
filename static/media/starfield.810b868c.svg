@@ -1,16 +1,24 @@
 <svg viewBox="0 0 640 480" xmlns="http://www.w3.org/2000/svg">
+  <defs><style type="text/css">
+    /* Enabling this is prettier but causes the
+     * this to draw over everything when used as
+     * a background.
+     */
+    /*.star { transition: opacity 1s }*/
+  </style></defs>
   <rect fill='black' width="100%" height="100%"/>
   <g id="starfield"/>
   <script>//<![CDATA[
     // https://gist.github.com/dontpaniclabsgists/6b669a61b17f00dba9dd1d1be0786ea3#file-print_graphic_2-txt
     const stars = []
-    const count = 1200
+    const count = 3600
     const sizeVariance = .9
-    const starSize = 1.0
+    const starSize = 0.75
     const opacityVariance = 1
-    const twinkleChance = 0.1
-    const w = 640
-    const h = 480
+    const twinkleStep = 0.15 // 50/50 chance to + or - this much
+    const twinkleChance = 0.25 // probabilty of a change in brightness
+    const w = 1280
+    const h = 960
 
     const g = document.getElementById('starfield')
 
@@ -34,12 +42,13 @@
         'http://www.w3.org/2000/svg',
         'circle'
       )
+      s.classList.add('star')
       s.setAttribute('cx', x)
       s.setAttribute('cy', y)
       s.setAttribute('r', r)
       s.setAttribute('fill', '#FFFFFF')
       s.setAttribute('fill-opacity', o)
-      return s;
+      return s
     }
 
     function getRandomNumber(min, max){ 
@@ -49,9 +58,15 @@
 
     const twinkle = () => {
       stars.forEach((star) => {
-        if(Math.random <= twinkleChance) {
-          console.info(star.style.opacity)
-          star.style.opacity = Math.random()
+        if(Math.random() <= twinkleChance) {
+          let opacity = star.style.opacity
+          if(opacity === '') opacity = 1
+          star.style.opacity = (
+            opacity + (
+              (Math.random() >= 0.5 ? 1 : -1)
+              * twinkleStep
+            )
+          )
         }
       })
     }
