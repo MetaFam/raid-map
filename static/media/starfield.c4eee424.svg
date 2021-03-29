@@ -3,16 +3,18 @@
   <g id="starfield"/>
   <script>//<![CDATA[
     // https://gist.github.com/dontpaniclabsgists/6b669a61b17f00dba9dd1d1be0786ea3#file-print_graphic_2-txt
-    const stars = 1200
+    const stars = []
+    const count = 1200
     const sizeVariance = .9
     const starSize = 1.0
     const opacityVariance = 1
+    const twinkleChance = 0.1
     const w = 640
     const h = 480
 
     const g = document.getElementById('starfield')
 
-    for(let i = 0 ; i < stars ; i++){
+    for(let i = 1; i <= count; i++){
       const x = getRandomNumber(0, w)
       const y = getRandomNumber(0, h)
       const r = getRandomNumber(
@@ -22,7 +24,9 @@
       const o = getRandomNumber(
         (1 - opacityVariance), 1
       )
-      g.append(makeStar(x, y, r, o))
+      const star = makeStar(x, y, r, o)
+      stars.push(star)
+      g.append(star)
     }
 
     function makeStar(x, y, r, o) {
@@ -42,5 +46,15 @@
       const dist = max - min
       return min + (Math.random() * dist) 
     }
+
+    const twinkle = () => {
+      stars.forEach((star) => {
+        if(Math.random <= twinkleChance) {
+          console.info(star.style.opacity)
+          star.style.opacity = Math.random()
+        }
+      })
+    }
+    setInterval(twinkle, 333) 
   //]]></script>
 </svg>
