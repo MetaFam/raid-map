@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="100%"
+   height="100%"
+   id="floors"
+   version="1.1"
+   inkscape:version="1.0 (9f2f71dc58, 2020-08-02)"
+   sodipodi:docname="floors.svg"
+   viewBox="0 0 167.01794 107.18663">
+  <metadata
+     id="metadata14">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1904"
+     inkscape:window-height="1118"
+     id="namedview12"
+     showgrid="false"
+     inkscape:zoom="1.7517662"
+     inkscape:cx="-34.833087"
+     inkscape:cy="-10.51606"
+     inkscape:window-x="1157"
+     inkscape:window-y="243"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="cabin"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <defs
+     id="defs3789">
+    <style
+       type="text/css"
+       id="style2">
+      rect, #loft {
+        fill: white;
+        stroke: #020617;
+        stroke-width: 2.9;
+        stroke-linejoin: round;
+      }
+      rect:hover, #loft:hover {
+        fill: #FA3;
+      }
+    </style>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="cabin"
+     transform="translate(-385.50556,-364.40451)">
+    <rect
+       id="floor-1"
+       width="162.10567"
+       height="32.225826"
+       x="388.84479"
+       y="437.91531"
+       inkscape:label="#rect3872-5-1"
+       style="stroke-linecap:round" />
+    <rect
+       id="floor-2"
+       width="162.10567"
+       height="32.225826"
+       x="388.96783"
+       y="405.40433"
+       inkscape:label="#rect3872-5"
+       style="stroke-linecap:round" />
+    <g
+       id="floor-3"
+       style="stroke-linecap:round">
+      <rect
+         style="opacity:1;fill:none;stroke:#000000;stroke-width:2.346;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect16"
+         width="114.00577"
+         height="28.290831"
+         x="437.06772"
+         y="377.11349" />
+      <path
+         sodipodi:nodetypes="ccc"
+         inkscape:connector-curvature="0"
+         id="path3892"
+         d="m 483.63304,408.82226 -46.86377,-42.9678 -49.81371,43.027"
+         style="fill:#ffffff;stroke:#020617;stroke-width:2.9;stroke-linecap:round;stroke-linejoin:round" />
+      <path
+         sodipodi:nodetypes="ccc"
+         inkscape:connector-curvature="0"
+         id="path3894"
+         d="m 499.25768,408.82222 22.75661,-38.24245 24.11732,38.24245"
+         style="fill:#ffffff;stroke:#020617;stroke-width:2.9;stroke-linecap:round;stroke-linejoin:round" />
+    </g>
+  </g>
+</svg>
